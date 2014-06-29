@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /temp/
+Disallow: /Design Resources/
+Disallow: /cgi-bin/

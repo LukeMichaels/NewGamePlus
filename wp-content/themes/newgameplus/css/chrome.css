@@ -1,0 +1,15 @@
+body{
+	text-shadow: 0 1px 1px white;
+}
+#logo h1 {
+	text-shadow: none !important;
+}
+#logo2 {
+	text-shadow: none !important;
+}
+#logo3 {
+	text-shadow: none !important;
+}
+#logo4 {
+	text-shadow: none !important;
+}

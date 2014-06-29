@@ -1,0 +1,120 @@
+.prettyGalleryContainer {
+	float: left;
+	clear: both;
+	margin: 0 0 10px 8px;
+}
+	
+	.prettyGalleryContainer a:focus { outline: none; }
+
+	.prettyGalleryContainer img { border: 0; }
+
+	.prettyGalleryContainer ul {
+		margin: 0;
+		padding: 0;
+	}
+
+		.prettyGalleryContainer ul li {
+			float: left;
+			display: block;
+		}
+		
+			.prettyGalleryContainer ul li a,
+			.prettyGalleryContainer ul li a img { display: block; text-decoration: none; }
+
+	.prettyGalleryBackground {
+		margin: 0 0 10px 0;
+		padding: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+	}
+
+	.pp_alignleft { float: left; }
+	.pp_alignright { float: right; }
+	.pp_aligncenter { margin: 0 auto; }
+		
+	.pg_paging .pg_previous {
+		float: left;
+		display: block;
+		overflow: hidden;
+		margin: 1px 3px 5px 0;
+		width: 15px;
+		height: 14px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #e87e2d !important;
+	}
+		.pg_paging .pg_previous:hover { color: #671e3b !important; }
+		.pg_previous a:hover { color: #671e3b !important; }
+		.pg_previous a.disabled { color: #C7C7C7 !important; background-color: #FFFFFF; display: block;
+							    float: left;
+							    height: 26px;
+							    margin: -4px 0 0 -9px;
+							    overflow: hidden;
+							    text-align: center;
+							    width: 26px;
+							    font-size: 14px;
+								font-weight: 500;
+								text-align: center;
+		}
+		
+	.pg_paging .pg_next {
+		float: left;
+		display: block;
+		overflow: hidden;
+		margin: 1px 3px 5px 0;
+		width: 15px;
+		height: 14px;
+		font-size: 14px;
+		font-weight: 500;
+		color: #e87e2d !important;
+	}
+		.pg_paging .pg_next:hover { color: #671e3b !important; }
+		.pg_next a:hover { color: #671e3b !important; }
+		.pg_next a.disabled { color: #C7C7C7 !important; background-color: #FFFFFF; display: block;
+							    float: left;
+							    height: 26px;
+							    margin: -4px 0 0 -9px;
+							    overflow: hidden;
+							    text-align: center;
+							    width: 26px;
+							    font-size: 14px;
+								font-weight: 500;
+								text-align: center;
+		}
+		
+		.pg_paging li { text-align: center; }
+		
+		
+	.pg_pages {
+		float: left;
+		padding-left: 8px;
+	}
+	
+		.pg_pages ul {
+			float: left;
+			padding-right: 9px;
+			height: 15px;
+		}
+			.pg_pages ul li { line-height: 15px; }
+			
+			.pg_pages ul li.selected { font-weight: bold; }
+		
+		.pg_pages a {
+			padding: 2px;
+			color: #fff;
+			text-decoration: none;
+			font-size: 11px;
+			font-family: Arial;
+		}
+			.pg_pages a:hover { color: #c4c4c4; }
+			
+		.pg_pages a.circle {
+			display: block;
+			margin: 3px 1px 0 3px;
+			padding: 0;
+			width: 8px;
+			height: 8px;
+			text-indent: -10000px;
+		}
+			.pg_pages a.circle:hover,
+			.pg_pages .selected a.circle { background-position: bottom left; }

@@ -1,0 +1,24 @@
+@CHARSET "ISO-8859-1";
+
+.bpfb_toolbar_container, .bpfb_controls_container {
+	clear: left;
+	padding-top: 5px;
+}
+
+.bpfb_toolbarItem {
+	border: none;
+	text-decoration: none;
+	display: block;
+	float: left;
+	height: 32px;
+	width: 32px;
+	margin-right: 1ex;
+	overflow: hidden;
+} 
+
+.bpfb_toolbarItem span {
+	display: block;
+	position: absolute;
+	left: -12000000000px;
+	display: none;
+}

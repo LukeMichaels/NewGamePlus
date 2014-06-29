@@ -1,4 +1,6 @@
 NewGamePlus
 ===========
 
-Social news and information network for button pressing enthusiests.
+A social news network info hub for button pressing enthusiests.
+
+Currently built on Wordpress and Buddypress.

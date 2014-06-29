@@ -1,0 +1,127 @@
+/* Custom Wordpress Login Page Style */
+
+/* Page Background */
+.login {
+	background: url("../newgameplus/images/bg4.jpg") !important;
+	margin: auto;
+	font-weight:bold;
+}
+.login input{
+	border-radius: 0;
+}
+
+/* Wordpress Logo Replacement (Don't forget to change width and height */
+.login h1{	
+	width: 350px;
+	height: 40px;
+	margin-bottom: 10px;
+}
+.login h1 img{
+	width: 280px;
+	height: 45px;
+}
+.login h1 a {
+	background:url("../newgameplus/images/newgameplus-login-logo.png") 0 0 no-repeat !important;
+	margin-left: 28px;
+	margin-bottom: 10px;
+	padding-bottom: 0px;
+}
+/* Top Bar Background Color */
+body.login {
+	border-top-color:#dac6ad;
+}
+.message {
+	margin-bottom: 0px;
+}
+/* Login Button */
+#wp-submit {
+	background: #bc3d1d;
+	border: #f24643;
+}
+
+#nav a{
+	background-color: #E87F2C;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 0;	
+    text-shadow: none !important;
+    font-family: 'Maven Pro', sans-serif;
+}
+#nav a:hover{
+	background-color: #671e3b;
+}
+#loginform{
+	border: 2px solid #c5b54d;
+	border-radius: 0 !important;
+	font-family: 'Maven Pro', sans-serif;
+}
+#loginform label{
+	font-size: 12px;
+	font-weight: 400;
+	color: #671e3b;
+}
+#wp-submit{
+	background-color: #E87F2C;
+    border: 0 none;
+    color: #FFFFFF;
+    cursor: pointer;
+    float: right;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 5px 10px;
+    text-decoration: none;
+    border-radius: 0;
+}
+#wp-submit:hover{
+	background-color: #671e3b !important;
+}
+#login p#backtoblog a{
+	color: #FFFFFF !important;
+}
+#backtoblog a{
+	background-color: #E87F2C;
+    border: 0 none;
+    color: #FFFFFF !important;
+    cursor: pointer;
+    float: right;
+    font-size: 12px !important;
+    font-weight: 400 !important;
+    margin-top: 5px;
+    padding: 5px 10px;
+    text-decoration: none !important;
+    border-radius: 0;
+    font-family: 'Maven Pro', sans-serif !important;
+    text-shadow: none !important;
+}
+#backtoblog a:hover{
+	background-color: #671e3b;
+}
+
+/* Lost Password Link */
+.login #nav a, .login #nav a:hover {
+	color: #FFFFFF!important;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	font-family: 'Maven Pro', sans-serif !important;
+}
+.cptch_block{
+	color: #394f58;
+	font-size: 12px;
+	font-weight: 400;
+	text-decoration: none;
+	font-family: 'Maven Pro', sans-serif !important;
+}
+/* Top Bar Link */
+.login p#backtoblog a:link, .login p#backtoblog a:visited {
+	color:#FFFFFF;
+}
+.login p#backtoblog a:hover, .login p#backtoblog a:active {
+	color:#FFFFFF;
+}
