@@ -11,3 +11,8 @@ wp-content/cache/
 wp-content/backups/
 sitemap.xml.gz
 wp-config.php
+bb-config.php
+.DS_Store
+Design Resources
+googleec4da8df5a577a29-1.html
+wp-activate.php
