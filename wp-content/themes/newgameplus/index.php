@@ -69,8 +69,9 @@
 				<p>PS: You can also follow us on Twitter: <a href="https://twitter.com/New_GamePlus" title="NewGame+ On Twitter" alt="NewGame+ On Twitter" target="_blank">@New_GamePlus</a></p>
 			</div><!--introduction--><br><br>
 			
-			<span class="member-intro">Members please login here:</span><br>
+			
 			<!-- :::::::::: login form :::::::::: -->
+			<span class="member-intro">Members please login here:</span><br>
 			<form name="login-form" id="home-login-form" class="standard-form" action="<?php echo site_url( 'wp-login.php', 'login_post' ) ?>" method="post">
 				<label><?php _e( 'Username', 'buddypress' ) ?><br />
 				<input type="text" name="log" id="home-user-login" class="input" value="<?php if ( isset( $user_login) ) echo esc_attr(stripslashes($user_login)); ?>" tabindex="97" /></label>
