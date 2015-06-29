@@ -157,6 +157,11 @@
 		 		gameQuotes[58] = "I am the mustard of your doom.";
 		 		gameQuotes[59] = "The right man in the wrong place can make all of the difference in the world.";
 		 		gameQuotes[60] = "My body is ready.";
+		 		gameQuotes[61] = "Do you know where I can find some sailors?";
+		 		gameQuotes[62] = "I used to be an adventurer like you, then I took an arrow in the knee.";
+		 		gameQuotes[63] = "Endure and survive.";
+		 		gameQuotes[64] = "It's time to kick ass and chew bubble gum... and I'm all outta gum.";
+		 		gameQuotes[65] = "Hey! Listen!";
 	
 		 	var myRandom = Math.floor(Math.random() * gameQuotes.length);
 	
