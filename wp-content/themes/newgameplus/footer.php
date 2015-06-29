@@ -39,7 +39,7 @@
 							
 							<!-- :::::::::: Version # :::::::::: -->
 							<div id="version">
-								<a href="http://newgameplus.co/version/" title="NewGame+ Version Number" alt="NewGame+ Version Number">Version 0.1</a>
+								<a href="http://newgameplus.co/version/" title="NewGame+ Version Number" alt="NewGame+ Version Number">Version 1.1</a>
 							</div><!--version-->
 							
 						</div><!--footer-navigation-->

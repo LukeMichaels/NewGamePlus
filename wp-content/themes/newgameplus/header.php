@@ -34,7 +34,7 @@
 	
 	<!-- :::::::::: Style Sheets :::::::::: -->
 	<link rel="stylesheet" href="<?php bloginfo('style.css')?>">
-	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/custom.css" />
+	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/main.css" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/typography.css" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/social.css" />
 	<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/blog.css" />
@@ -152,6 +152,11 @@
 		 		gameQuotes[53] = "Jason! Jaaaaaaaaason!";
 		 		gameQuotes[54] = "Do a barrel roll!";
 		 		gameQuotes[55] = "FK in the coffee";
+		 		gameQuotes[56] = "I don't have time to explain why I don't have time to explain.";
+		 		gameQuotes[57] = "The cake is a lie.";
+		 		gameQuotes[58] = "I am the mustard of your doom.";
+		 		gameQuotes[59] = "The right man in the wrong place can make all of the difference in the world.";
+		 		gameQuotes[60] = "My body is ready.";
 	
 		 	var myRandom = Math.floor(Math.random() * gameQuotes.length);
 	
@@ -163,11 +168,8 @@
 		 to support sites with threaded comments (when in use).-->
 	<?php if ( is_singular() && get_option( 'thread_comments' ) )
 		wp_enqueue_script( 'comment-reply' ); ?>
- 	
-	<!--
-	Always have wp_head() just before the closing </head> tag of your theme, 
-	or you will break many plugins, which generally use this hook to add 
-	elements to <head> such as styles, scripts, and meta tags.-->
+
+  <!-- can't touch this -->
  	<?php wp_head(); ?>
  	
 </head>
@@ -198,7 +200,7 @@
 						
 						
 						<div id="alpha-temp">
-							<a href="http://newgameplus.co/version/" title="NewGame+ Version Number" alt="NewGame+ Version Number">+ alpha 0.1</a>
+							<a href="http://newgameplus.co/version/" title="NewGame+ Version Number" alt="NewGame+ Version Number">+ beta 1.1</a>
 						</div><!--alpha-temp-->
 						
 					</center>
