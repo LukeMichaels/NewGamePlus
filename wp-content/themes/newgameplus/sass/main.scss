@@ -112,21 +112,9 @@
 }
 
 
-/* :::::::::: Style Guide :::::::::: */
-/* Fonts
-	font-family: 'Press Start 2P',cursive; 
-	font-family: 'Maven Pro', sans-serif;
-		  Sizes: 400, 500, 700         */
-	
-/* Colors
-	#c4b44d - Green
-	#e87f2c - Orange
-	#b8442f - Red (Dark Orange)
-	#661e3b - Purple
-	#384e56 - Dark Blue*/
-
 /* ::::::::::::::::::::::::::::::: */
 /* :::::::::: CSS Reset :::::::::: */
+/* ::::::::::::::::::::::::::::::: */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -174,13 +162,14 @@ table {
 
 /* ::::::::::::::::::::::::::::::: */
 /* :::::::::: universal :::::::::: */
+/* ::::::::::::::::::::::::::::::: */
 body{
+  width: 100%;
+  height: 100%;
 	background: url("../images/bg4.jpg");
-	background-color: #394f58;
+	background-color: $color-black;
 	font-family: 'Maven Pro', sans-serif;
-	text-align: center;
-	height: 100%;
-	width: 100%;
+	font-size: 16px;
 }
 .chrome body{
 	font-family: 'Maven Pro', sans-serif;
@@ -189,25 +178,26 @@ body{
 #main{
 	width: 960px;
 	height: 100%;
-	background: #FFFFFF;
+	background: $color-white;
 }
 #content{
 	float: left;
-	background: #FFFFFF;
+	background: $color-white;
 	width: 620px;
 	z-index: 25;
 }
 #content-wrapper{
+  width: 100%;
+	max-width: 960px;
 	margin: 0 auto;
-	width: 960px;
 	text-align: left;
 }
 #content-frame{
-    float: left;
-    margin-left: auto;
-    margin-right: auto;
-    width: 960px;
-    height: 100%;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+  float: left;
+  margin: 0 auto;
 	/*
 	-moz-box-shadow: 4px 6px 4px rgba(0,0,0,0.12);
 	-webkit-box-shadow: 4px 6px 4px rgba(0,0,0,0.12);
@@ -215,17 +205,19 @@ body{
 	*/
 }
 #main-col{
-	width: 960px;
-	background-color: #FFFFFF;
+	width: 100%;
+  max-width: 960px;
+	background-color: $color-white;
 }
 #main-content-wrapper{
-	background-color: #FFFFFF;
-	width: 960px;
-	height: 100%;
+  width: 100%;
+  max-width: 960px;
+  height: 100%;
+	background-color: $color-white;
 }
 header{
-	padding-bottom: 25px;
-	background-color: #FFFFFF;
+  width: 100%;
+	background-color: $color-white;
 }
 
 /* :::::::::: greeting :::::::::: */
@@ -236,7 +228,7 @@ header{
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 500;
-	color: #394f58;
+	color: $color-black;
 }
 #introduction a{
 	color: #e87e2d;
@@ -261,9 +253,9 @@ header{
 	font-size: 12px;
 }
 .wpcf7-submit{
-    background-color: #E87F2C;
+    background-color: $color-orange;
     border: 0 none;
-    color: #FFFFFF;
+    color: $color-white;
     cursor: pointer;
     font-size: 10px;
     margin-right: 2px;
@@ -299,11 +291,12 @@ div.wpcf7-validation-errors {
 	font-size: 16px;
 	line-height: 18px;
 	font-weight: 500;
-	color: #394f58;
+	color: $color-black;
 }
 
 /* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::: top (admin) bar ::::::::::::::::::::::::::::::::: */
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::::::::: */
 #wp-admin-bar ul {
 	width: 365px;
 }
@@ -372,13 +365,15 @@ div.wpcf7-validation-errors {
 /* :::::::::::::::::::::::::::::: */
 /* :::::::::: top logo :::::::::: */
 #logo{
+  width: 80%;
 	height: 136px;
+	margin: 0 auto;
 	text-align: center;
 	margin-left: 67px;
 	margin-bottom: 10px;
-    font-family: 'Press Start 2P',cursive;
-    font-size: 105.25px;
-    background-color: #FFFFFF;
+	background-color: $color-white;
+  font-family: 'Press Start 2P',cursive;
+  font-size: 6.5781em; // 105.25px / 16
 }
 #logo a{
 	text-decoration: none;
@@ -415,7 +410,7 @@ div.wpcf7-validation-errors {
 	z-index: 499;
 }
 #alpha-tag #alpha3{
-	position: absolute;
+	position: absolute; 
 	float: left;
 	top: 0;
 	left: 0;
@@ -447,7 +442,7 @@ div.wpcf7-validation-errors {
 
 #logo h1 {
 	font-size: 105.25px !important;
-	color: #c4b44d;
+	color: $color-green;
     background-repeat: no-repeat;
     margin-top: 10px;
     position: absolute;
@@ -458,7 +453,7 @@ div.wpcf7-validation-errors {
 	text-shadow: none;
 }
 #logo2 {
-	color: #e87f2c;
+	color: $color-orange;
     background-repeat: no-repeat;
     margin-top: 20px;
     position: absolute;
@@ -469,7 +464,7 @@ div.wpcf7-validation-errors {
 	text-shadow: none;
 }
 #logo3 {
-	color: #b8442f;
+	color: $color-red;
     background-repeat: no-repeat;
     margin-top: 29px;
     position: absolute;
@@ -480,7 +475,7 @@ div.wpcf7-validation-errors {
 	text-shadow: none;
 }
 #logo4 {
-	color: #661e3b;
+	color: $color-purple;
     background-repeat: no-repeat;
     margin-top: 38px;
     position: absolute;   
@@ -503,7 +498,7 @@ div.wpcf7-validation-errors {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #C4B44D;
+	background-color: $color-green;
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 12px;
 	z-index: 5;
@@ -513,7 +508,7 @@ div.wpcf7-validation-errors {
 	position: absolute;
 	width: 960px;
 	height: 30px;
-	background-color: #C4B44D;
+	background-color: $color-green;
 	z-index: 1;
 }
 #nav-plus{
@@ -532,7 +527,7 @@ div.wpcf7-validation-errors {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #E87F2C;
+	background-color: $color-orange;
 	z-index: 6;
 }
 #nav-avatar{
@@ -545,7 +540,7 @@ div.wpcf7-validation-errors {
 #nav-avatar img{
 	width: 20px;
 	height: 20px;
-	border: 1px solid #FFFFFF;
+	border: 1px solid $color-white;
 }
 #left-navigation-wrapper{
 	position: relative;
@@ -562,7 +557,7 @@ div.wpcf7-validation-errors {
 	margin-top: 0px;
 	padding: 0;
 	list-style: none;
-	/* border-left: 1px solid #FFFFFF; */
+	/* border-left: 1px solid $color-white; */
 	text-align: center;
 }
 #left-navigation-wrapper li:first-child{
@@ -570,7 +565,7 @@ div.wpcf7-validation-errors {
 }
 #left-navigation-wrapper li a{
 	font-size: 11px;
-	color: #FFFFFF;
+	color: $color-white;
 	display: inline-block;
 	padding: 0px 10px;
 	position: relative;
@@ -580,12 +575,12 @@ div.wpcf7-validation-errors {
 	cursor: pointer;
 }
 #left-navigation-wrapper li a:hover{
-	color: #661E3B;
+	color: $color-purple;
 }
 .sign-in-nav{
 	float: left;
 	margin-top: 4px;
-	color: #FFFFFF;
+	color: $color-white;
 	font-size: 12px;
 	font-weight: 400;
 }
@@ -603,14 +598,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-activity.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-activity a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-activity-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 /* :::::::::: profile button */
 #left-navigation-wrapper #li-nav-xprofile a{
@@ -618,14 +613,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-profile.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-xprofile a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-profile-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 /* :::::::::: messages button */
 #left-navigation-wrapper #li-nav-messages a{
@@ -633,14 +628,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-messages.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-messages a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-messages-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-messages a span{
 	float: left;
@@ -649,7 +644,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 /* :::::::::: friends button */
 #left-navigation-wrapper #li-nav-friends a{
@@ -657,14 +652,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-friends.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-friends a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-friends-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-friends a span{
 	display: none;
@@ -675,7 +670,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 /* :::::::::: groups button */
 #left-navigation-wrapper #li-nav-groups a{
@@ -683,14 +678,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-groups.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-groups a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-groups-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-groups a span{
 	display: none;
@@ -701,7 +696,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 /* :::::::::: forums button */
 #left-navigation-wrapper #li-nav-forums a{
@@ -709,14 +704,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-forums.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-forums a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-forums-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 /*
 #left-navigation-wrapper #li-nav-forums a span{
@@ -727,7 +722,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 */
 /* :::::::::: achievements button */
@@ -736,14 +731,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-achievements.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-achievements a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-achievements-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-achievements a span{
 	display: none;
@@ -754,7 +749,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 /* :::::::::: media button */
 #left-navigation-wrapper #li-nav-media a{
@@ -762,14 +757,14 @@ div.wpcf7-validation-errors {
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-media.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 #left-navigation-wrapper #li-nav-media a:hover{
 	width: 20px; 
 	height: 20px;
 	background: url("http://www.newgameplus.co/wp-content/themes/newgameplus/images/interface/ngp-media-roll.png") no-repeat;
 	text-indent: -9999px;
-	color: #e87f2c !important;
+	color: $color-orange !important;
 }
 /*
 #left-navigation-wrapper #li-nav-media a span{
@@ -780,7 +775,7 @@ div.wpcf7-validation-errors {
 	margin-left: 13px;
 	margin-top: -4px;
 	text-indent: 0px !important;
-	color: #FFFFFF !important;
+	color: $color-white !important;
 }
 */
 
@@ -807,7 +802,7 @@ div.wpcf7-validation-errors {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #661E3B;
+	background-color: $color-purple;
 	z-index: 6;
 }
 #right-navigation-wrapper{
@@ -818,7 +813,7 @@ div.wpcf7-validation-errors {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #661E3B;
+	background-color: $color-purple;
 }
 #right-navigation-wrapperol, ul {
     float: right;
@@ -830,7 +825,7 @@ div.wpcf7-validation-errors {
 	height: 15px;
 	padding: 0;
 	list-style: none;
-	border-left: 1px solid #FFFFFF;
+	border-left: 1px solid $color-white;
 	text-align: center;
 }
 #right-navigation-wrapper li:first-child{
@@ -839,7 +834,7 @@ div.wpcf7-validation-errors {
 #right-navigation-wrapper li a{
 	font-size: 12px;
 	font-weight: 400;
-	color: #FFFFFF;
+	color: $color-white;
 	display: inline-block;
 	padding: 0px 10px;
 	position: relative;
@@ -849,7 +844,7 @@ div.wpcf7-validation-errors {
 	cursor: pointer;
 }
 #right-navigation-wrapper li a:hover{
-	color: #E87F2C;
+	color: $color-orange;
 }
 #nav-wrap-right{
 	position: absolute;
@@ -867,7 +862,7 @@ div.submenu {
     -moz-box-shadow: 0 0px 4px #777;
     -webkit-box-shadow: 0 0px 4px #777;
     box-shadow: 0px 0px 4px #777;
-    color: #FFFFFF;
+    color: $color-white;
     background: #B8432E;
     z-index: 1;
     opacity: 0;
@@ -893,17 +888,17 @@ ul.sub-menu li{
 	list-style: none;
 }
 ul.sub-menu li a {
-	color: #FFF !important;
+	color: $color-white !important;
     padding: 0 12px 0 12px;
     line-height: 15px;
     text-decoration: none;
 }
 ul.sub-menu li a:visited,
 ul.sub-menu li a:active {
-	color: #FFF;
+	color: $color-white;
 }
 ul.sub-menu li a:hover {
-	color: #E87F2C !important;
+	color: $color-orange !important;
 	text-decoration: none;
 }
 
@@ -918,7 +913,7 @@ ul.sub-menu li a:hover {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #c4b44d;
+	background-color: $color-green;
 	font-family: 'Maven Pro', sans-serif;
 	font-size: 12px;
 	z-index: 5;
@@ -928,7 +923,7 @@ ul.sub-menu li a:hover {
 	position: absolute;
 	width: 960px;
 	height: 30px;
-	background-color: #e87f2c;
+	background-color: $color-orange;
 	z-index: 1;
 }
 #footer-logo a{
@@ -940,7 +935,7 @@ ul.sub-menu li a:hover {
     font-family: 'Press Start 2P',cursive;
     text-decoration: none;
     font-size: 12px;
-    color: #FFFFFF;
+    color: $color-white;
 }
 #footer-logo a:hover{
 	color: #671e3b;
@@ -965,7 +960,7 @@ ul.sub-menu li a:hover {
 	margin: 0;
 	padding: 0;
 	display: inline block;
-	background-color: #c4b44d;
+	background-color: $color-green;
 	z-index: 6;
 }
 #footer-navigation-wrapper nav{
@@ -977,7 +972,7 @@ ul.sub-menu li a:hover {
 	height: 15px;
 	padding: 0;
 	list-style: none;
-	border-left: 1px solid #FFFFFF;
+	border-left: 1px solid $color-white;
 	text-align: center;
 }
 #footer-navigation-wrapper li:first-child{
@@ -985,7 +980,7 @@ ul.sub-menu li a:hover {
 }
 #footer-navigation-wrapper li a{
 	font-size: 11px;
-	color: #FFFFFF;
+	color: $color-white;
 	display: inline-block;
 	padding: 0px 10px;
 	position: relative;
@@ -995,7 +990,7 @@ ul.sub-menu li a:hover {
 	cursor: pointer;
 }
 #footer-navigation-wrapper li a:hover{
-	color: #661E3B;
+	color: $color-purple;
 }
 #extended-footer-nav{
 	position: relative;
@@ -1007,7 +1002,7 @@ ul.sub-menu li a:hover {
 	height: 15px;
 	padding: 0;
 	list-style: none;
-	border-left: 1px solid #FFFFFF;
+	border-left: 1px solid $color-white;
 	text-align: center;
 }
 #extended-footer-nav nav{
@@ -1019,15 +1014,15 @@ ul.sub-menu li a:hover {
 	height: 15px;
 	padding: 0;
 	list-style: none;
-	border-left: 1px solid #FFFFFF;
+	border-left: 1px solid $color-white;
 	text-align: center;
 }
 #extended-footer-nav li:first-child{
-	border-left: 1px solid #FFFFFF !important;
+	border-left: 1px solid $color-white !important;
 }
 #extended-footer-nav li a{
 	font-size: 11px;
-	color: #FFFFFF;
+	color: $color-white;
 	display: inline-block;
 	padding: 0px 10px;
 	position: relative;
@@ -1037,7 +1032,7 @@ ul.sub-menu li a:hover {
 	cursor: pointer;
 }
 #extended-footer-nav li a:hover{
-	color: #661E3B;
+	color: $color-purple;
 }
 
 /* :::::::::: version # :::::::::: */
@@ -1052,24 +1047,24 @@ ul.sub-menu li a:hover {
 	text-decoration: none;
 	font-size: 11px;
 	font-weight: 400;
-	color: #FFFFFF;
+	color: $color-white;
 }
 #version a:hover{
-	color: #661E3B;
+	color: $color-purple;
 }
 
 /* :::::::::: legal stuff :::::::::: */
 #legal-stuff{
 	float: left;
 	width: 960px;
-	background-color: #FFFFFF;
+	background-color: $color-white;
 }
 #legal-stuff p{
 	padding: 10px 20px;
 	font-size: 12px;
 	line-height: 16px;
 	font-weight: 500;
-	color: #661e3b;
+	color: $color-purple;
 	text-align: center;
 	vertical-align: middle;
 }
@@ -1084,7 +1079,7 @@ ul.sub-menu li a:hover {
     margin-bottom: 25px;
 }
 #game-quote{
-    color: #FFFFFF;
+    color: $color-white;
 	font-family: 'Press Start 2P', cursive;
 	font-size: 12px;
 	line-height: 20px;
@@ -1101,7 +1096,7 @@ ul.sub-menu li a:hover {
     width: 50%;
 }
 .pinched:before {
-    background: none repeat scroll 0 0 #661e3b;
+    background: none repeat scroll 0 0 $color-purple;
     content: "";
     height: 20px;
     left: 50%;
@@ -1111,9 +1106,9 @@ ul.sub-menu li a:hover {
     width: 100px;
 }
 .pinched {
-    background: none repeat scroll 0 0 #661e3b;
+    background: none repeat scroll 0 0 $color-purple;
     border-radius: 10px 10px 10px 10px;
-    color: #FFFFFF;
+    color: $color-white;
     margin: 55px 0 0 0;
     padding: 15px;
     position: relative;
@@ -1132,12 +1127,12 @@ ul.sub-menu li a:hover {
 }
 Inherited fromdiv.pinched
 .pinched {
-    color: #FFFFFF;
+    color: $color-white;
     text-align: center;
 }
 Inherited fromblockquote.rectangle-speech-border
 .rectangle-speech-border {
-    color: #661e3b;
+    color: $color-purple;
     text-align: center;
 }
 
@@ -1149,7 +1144,7 @@ Inherited fromblockquote.rectangle-speech-border
 	float: left;
 	width: 960px;
 	height: 100%;
-	background-color: #FFFFFF;
+	background-color: $color-white;
 }
 #home-wrapper ul{
 	list-style: none;
@@ -1161,7 +1156,7 @@ Inherited fromblockquote.rectangle-speech-border
 	margin-top: 10px;
 	width: 460px;
 	padding: 10px;
-	border-right: 1px solid #FFFFFF;
+	border-right: 1px solid $color-white;
 }
 /* ::::::::::: status update */
 #home-status-update{
@@ -1197,16 +1192,16 @@ Inherited fromblockquote.rectangle-speech-border
 #home-status-update #whats-new-submit{
 	font-size: 10px !important;
 	cursor: pointer !important;
-	color: #FFFFFF !important;
-	background-color: #e87f2c !important;
+	color: $color-white !important;
+	background-color: $color-orange !important;
 }
 #home-status-update #whats-new-submit:hover{
-	background-color: #661e3b !important;
+	background-color: $color-purple !important;
 }
 #home-status-update #aw-whats-new-submit button{
 	background: none !important;
     border: none !important;
-    color: #FFFFFF !important;
+    color: $color-white !important;
     cursor: pointer !important;
     font: 10px !important;
     outline: medium none !important;
@@ -1223,10 +1218,10 @@ Inherited fromblockquote.rectangle-speech-border
 
 /* :::::::::: what's new error message */
 div#message.error p {
-    background-color: #b8442f;
+    background-color: $color-red;
     border-color: #a73a27;
     clear: left;
-    color: #FFFFFF;
+    color: $color-white;
 }
 
 /* :::::::::: what's new media buttons */
@@ -1274,14 +1269,14 @@ div#message.error p {
 #left-home-wrapper .activity-list li.mini .activity-avatar img.avatar img.FB_profile_pic {
     height: 50px;
     width: 50px;
-    border: 3px solid #661e3b;
+    border: 3px solid $color-purple;
     margin: 0;
     padding: 0;
 }
 #left-home-wrapper .activity-avatar img{
 	height: 50px;
     width: 50px;
-    border: 3px solid #661e3b;
+    border: 3px solid $color-purple;
     margin: 0;
     padding: 0;
 }
@@ -1351,7 +1346,7 @@ div#message.error p {
 	float: left;
 	padding-bottom: 10px;
     width: 390px;
-	color: #394f58;
+	color: $color-black;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 500;
@@ -1416,10 +1411,10 @@ div#message.error p {
     min-height: 14px;
     width: auto;
     overflow: hidden;
-    background: #FFFFFF;
+    background: $color-white;
 }
 #left-home-wrapper div.activity-comments > ul {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 $color-white;
     border-radius: 0;
     padding: 0 0 10px 10px;
     width: 430px;
@@ -1486,7 +1481,7 @@ div#message.error p {
     margin-bottom: 10px;
     padding: 0;
     width: 360px;
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 $color-white;
     border: 1px inset #CCCCCC;
     border-radius: 0 0 0 0;
 }
@@ -1504,7 +1499,7 @@ div#message.error p {
 }
 #left-home-wrapper .acomment-content p{
 	margin: 0;
-	color: #394F58;
+	color: $color-black;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -1546,13 +1541,13 @@ div#message.error p {
 }
 #home-activity-pagination .home-activity-pagination-count{
 	float: left;
-	color: #394f58;
+	color: $color-black;
 }
 #home-activity-pagination .home-activity-pagination-links{
 	float: left;
 	margin-left: 10px;
 	font-size: 16px;
-	color: #394f58;
+	color: $color-black;
 }
 #home-activity-pagination .home-activity-pagination-links a{
 	color: #e87e2d;
@@ -1582,12 +1577,15 @@ div#message.error p {
 }
 
 /* :::::::::: article image */
+.blog-section-featured-image {
+  max-width: 100%;
+}
 .home-blog-image img{
 	width: 450px;
 	height: 216px;
-	border: 3px solid #661E3B;
-	border-left: 5px solid #661E3B;
-	border-bottom: 5px solid #661E3B;
+	border: 3px solid $color-purple;
+	border-left: 5px solid $color-purple;
+	border-bottom: 5px solid $color-purple;
 }
 #home-blog-info-block{
 	float: left;
@@ -1606,7 +1604,7 @@ div#message.error p {
 }
 .home-blog-article-title h2 a{
 	float: left;
-	color: #661E3B;
+	color: $color-purple;
 	font-size: 18px;
 	text-decoration: none;
 	font-weight: 700;
@@ -1635,7 +1633,7 @@ div#message.error p {
 }
 .home-blog-article-author a{
 	font-size: 14px;
-	color: #E87F2C;
+	color: $color-orange;
 	text-decoration: none;
 }
 
@@ -1659,7 +1657,7 @@ div#message.error p {
 
 /* :::::::::: article :::::::::: */
 .home-blog-caption p{
-	color: #394F58;
+	color: $color-black;
     font-size: 14px;
     font-weight: 500;
     line-height: 18px;
@@ -1673,14 +1671,14 @@ div#message.error p {
 }
 .wp-pagenavi a, .wp-pagenavi span {
 	text-decoration: none;
-	border: 1px solid #c4b44d;
+	border: 1px solid $color-green;
 	padding: 3px 5px;
 	margin: 2px;
-	color: #e87f2c;
+	color: $color-orange;
 }
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
-	border-color: #b8442f;
-	color: #b8442f;
+	border-color: $color-red;
+	color: $color-red;
 }
 .wp-pagenavi span.current {
 	font-weight: 470;
@@ -1701,7 +1699,7 @@ div#message.error p {
 }
 .about-body{
 	float: left;
-	color: #394f58;
+	color: $color-black;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -1763,7 +1761,7 @@ div#message.error p {
 	margin-top: 0px;
 }
 .about-body .wpcf7-form-control{
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 $color-white;
     border: 1px solid #C7C7C7;
     color: #555555;
     font-family: inherit;
@@ -1779,7 +1777,7 @@ div#message.error p {
 	height: 25px;
 	text-align: center;
 	cursor: pointer;
-	color: #FFF;
+	color: $color-white;
 	background-color: #e87e2d;
 	border: 0;
 }
@@ -1805,7 +1803,7 @@ div#message.error p {
 #faq-body{
 	float: left;
 	width: 690px;
-	color: #394f58;
+	color: $color-black;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -1882,7 +1880,7 @@ div#message.error p {
 	margin-top: 0px;
 }
 #faq-body .wpcf7-form-control{
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 $color-white;
     border: 1px solid #C7C7C7;
     color: #555555;
     font-family: inherit;
@@ -1898,7 +1896,7 @@ div#message.error p {
 	height: 25px;
 	text-align: center;
 	cursor: pointer;
-	color: #FFF;
+	color: $color-white;
 	background-color: #e87e2d;
 	border: 0;
 }
@@ -1924,7 +1922,7 @@ div#message.error p {
 }
 .contact-body{
 	float: left;
-	color: #394f58;
+	color: $color-black;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;
@@ -1975,7 +1973,7 @@ div#message.error p {
 	margin-top: 0px;
 }
 .contact-body .wpcf7-form-control{
-	background: none repeat scroll 0 0 #FFFFFF;
+	background: none repeat scroll 0 0 $color-white;
     border: 1px solid #C7C7C7;
     color: #555555;
     font-family: inherit;
@@ -1992,7 +1990,7 @@ div#message.error p {
 	height: 25px;
 	text-align: center;
 	cursor: pointer;
-	color: #FFF;
+	color: $color-white;
 	background-color: #e87e2d;
 	border: 0;
 }
@@ -2023,12 +2021,12 @@ div#message.error p {
 }
 #welcome-wrapper .wpcf7-submit{
 	cursor: pointer;
-	color: #FFF;
-	background-color: #b8442f;
+	color: $color-white;
+	background-color: $color-red;
 	font-family: 'Press Start 2P',cursive;
 }
 #welcome-wrapper .wpcf7-submit:hover{
-	background-color: #661e3b;
+	background-color: $color-purple;
 }
 #welcome-wrapper div.wpcf7-response-output{
 	text-align: center !important;
@@ -2074,7 +2072,7 @@ width: 960px;
 	font-size: 16px;
 	font-weight: 500;
 	padding: 5px 0;
-	color: #661E3B;
+	color: $color-purple;
 	border-bottom: 1px dashed #c5b54d;
 }
 .search-result p{
@@ -2112,7 +2110,7 @@ width: 960px;
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 18px;
-	color: #394f58;
+	color: $color-black;
 }
 .search-result .activity-meta{
 	margin-left: -7px;
@@ -2121,7 +2119,7 @@ width: 960px;
 	color: #c5b54d;
 }
 .search-result .post{
-	color: #394f58;
+	color: $color-black;
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 500;
@@ -2133,7 +2131,7 @@ width: 960px;
 	color: #c5b54d;
 }
 .search-result .action a:hover{
-	color: #FFFFFF;
+	color: $color-white;
 }
 .search-result .activity-content p{
 	min-height: 15px;
@@ -2189,10 +2187,10 @@ width: 960px;
     min-height: 14px;
     width: auto;
     overflow: hidden;
-    background: #FFFFFF;
+    background: $color-white;
 }
 .search-result div.activity-comments > ul {
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 $color-white;
     border-radius: 0;
     padding: 0 0 10px 10px;
     width: 580px;
@@ -2259,7 +2257,7 @@ width: 960px;
     margin-bottom: 10px;
     padding: 0;
     width: 360px;
-    background: none repeat scroll 0 0 #FFFFFF;
+    background: none repeat scroll 0 0 $color-white;
     border: 1px inset #CCCCCC;
     border-radius: 0 0 0 0;
 }
@@ -2277,17 +2275,17 @@ width: 960px;
 }
 .search-result .acomment-content p{
 	margin: 0;
-	color: #394F58;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
+	color: $color-black;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
 }
 .search-result .acomment-content a{
 	color: #e87e2d;
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 18px;
-    text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 18px;
+  text-decoration: none;
 }
 .search-result .acomment-content a:hover{
 	color: #671e3b;
