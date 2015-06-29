@@ -55,19 +55,32 @@
 	</div><!--sidebar-most-commented-->
 	
 	<!-- :::::::::: twitter feed :::::::::: -->
+<!--
 	<div id="sidebar-twitter">
 		<span class="sidebar-heading"><h3>Twitter Feed</h3></span>
 		<div id="twitter-feed-wrap">
 			<div id="twitter_t"></div>
 			<div id="twitter_m">
 			   <div id="twitter_container">
-			       <ul id="twitter_update_list"></ul>
-			   </div><!--twitter_container-->
-			</div><!--twitter_m-->
+			       <ul id="twitter_update_list">
+  			       <a class="twitter-timeline"
+                  data-widget-id="615447589668827136"
+                  href="https://twitter.com/New_GamePlus"
+                  data-screen-name="New_GamePlus"
+                  data-chrome="nofooter noborders transparent"
+                  data-tweet-limit="5">
+                  Tweets by @New_GamePlus
+                </a>
+			       </ul>
+			   </div>
+			</div>
 			<div id="twitter_b">
 			</div>
-		</div><!--twitter-feed-wrap-->
-	</div><!--sidebar-twitter-->
+		</div>
+	</div>
+	
+	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+-->
 	
 	<!-- Widget area -->
 	<?php dynamic_sidebar('Sidebar');?>
