@@ -714,6 +714,15 @@ li.gallery-pagination{
 	*/
 	column-rule: none;
 }
+
+.article-body-blank {
+  position: relative;
+	float: left;
+	margin: 0 auto;
+	width: 940px;
+	height: 100%;
+}
+
 .ie .article-body{
 	position: relative;
 	float: left;

@@ -177,7 +177,7 @@
 		</div><!--blog-page-header-->
 					
 		<!-- ::::::: article body :::::::::: -->
-		<div class="article-body">
+		<div class="article-body-blank">
 			<?php the_content()?>
 		</div><!--article-left-column-->
 		
