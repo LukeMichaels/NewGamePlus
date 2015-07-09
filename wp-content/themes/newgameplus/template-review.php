@@ -320,7 +320,7 @@
 			
 		<div id="article-credit-wrapper">	
 		
-			<! :::::::::: credits :::::::::: -->
+			<!-- :::::::::: credits :::::::::: -->
 			<div id="article-credits-container">
 			
 				<!-- :::::::::: article credit :::::::::: -->
