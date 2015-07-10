@@ -1,4 +1,13 @@
-<?php get_header( 'buddypress' ) ?>
+<?php
+/*
+ *
+ * Copyright NewGame+ 
+ * Template Name: NG+ Register
+ * Created By: Luke Michaels - luke@newgameplus.co
+ *
+ */
+?>
+<?php get_header( 'buddypress' );?>
 
 	<div id="content">
 		<div class="padder">
