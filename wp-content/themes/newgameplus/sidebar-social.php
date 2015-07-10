@@ -60,6 +60,8 @@
 			<?php do_action( 'bp_sidebar_login_form' ) ?>
 			<input type="submit" name="wp-submit" id="sidebar-wp-submit" value="<?php _e( 'Log In', 'buddypress' ); ?>" tabindex="100" />
 			<input type="hidden" name="testcookie" value="1" />
+			<?php if( function_exists( 'cptch_display_captcha_custom' ) ) { echo "<input type='hidden' name='cntctfrm_contact_action' value='true' />"; echo cptch_display_captcha_custom(); } ?>
+			
 		</form>
 
 		<?php do_action( 'bp_after_sidebar_login_form' ) ?>
