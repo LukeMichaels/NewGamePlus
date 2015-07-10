@@ -27,6 +27,11 @@
 	margin-bottom: 10px;
 	/* border-bottom: 1px solid #C7C7C7; */
 }
+#home-single-post {
+  width: 100%;
+  float: left;
+  margin-bottom: 20px;
+}
 
 /* :::::::::: article image */
 .blog-section-featured-image img {
@@ -1589,7 +1594,69 @@ li.gallery-pagination{
 	float: left;
 	width: 440px;
 	font-size: 12px;
-    font-weight: 400;
-    line-height: 16px;
+  font-weight: 400;
+  line-height: 16px;
 	color: #394F58;
+}
+
+/* ::::: contest page */
+.contest-body {
+  width: 100%;
+  
+  p {
+    float: left;
+    padding-bottom: 20px;
+    width: 100%;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    color: $color-black;
+  }
+  
+  b {
+    color: $color-purple;
+    font-weight: 700;
+  }
+  
+  a {
+    color: $color-orange;
+    text-decoration: none;
+    
+    &:hover {
+      color: $color-purple;
+    }
+  }
+  
+  ul {
+    float: left;
+    padding-bottom: 20px;
+    list-style: inside none square;
+    padding-left: 1em;
+    text-indent: -1em;
+    color: $color-black;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    width: 445px;
+  }
+  
+  li {
+    color: $color-black;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+  }
+  
+}
+.contest-left-column {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.contest-right-column {
+  width: 50%;
+  float: left;
+  box-sizing: border-box;
+  padding: 20px;
 }
