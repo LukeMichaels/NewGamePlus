@@ -61,12 +61,16 @@
 				
 				<p>We had a crazy idea to start a community for people who love games. Over the next few months, we're going to be working hard at bringing you the best site we can. We are excited about what we are building and cannot wait to share it with you. </p><br>
 				
-				<p>As we implement features we're going to allow more-and-more users to experience the site. If you're interested in a invite to the beta, or would just like more information about NewGame+, please leave your email address below.</p><br>
+				<p>As we implement features we're going to allow more-and-more users to experience the site. If you're interested in a trying out the site, just click the button below. Pardon our dust, we are still working on a lot of the features.</p><br>
 				
 				<span class="sincerely"><3 NG+</span><br><br>
+        
+        <div class="register-button-wrap">
+          <a href="http://www.newgameplus.co/register" alt="Register for a NewGame+ Account">Register Here</a>
+        </div>
 				
-				<?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]')?><br>
-				<p>PS: You can also follow us on Twitter: <a href="https://twitter.com/New_GamePlus" title="NewGame+ On Twitter" alt="NewGame+ On Twitter" target="_blank">@New_GamePlus</a></p>
+        <!-- <?php echo do_shortcode('[contact-form-7 id="4" title="Contact form 1"]')?><br> 
+				<p>PS: You can also follow us on Twitter: <a href="https://twitter.com/New_GamePlus" title="NewGame+ On Twitter" alt="NewGame+ On Twitter" target="_blank">@New_GamePlus</a></p>-->
 			</div><!--introduction--><br><br>
 			
 			

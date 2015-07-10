@@ -221,37 +221,61 @@ header{
 }
 
 /* :::::::::: greeting :::::::::: */
-#introduction{
+#introduction {
+  width: 100%;
+  float: left;
+  margin-bottom: 40px;
+
+  p{
+  	font-size: 14px;
+  	line-height: 18px;
+  	font-weight: 500;
+  	color: $color-black;
+  }
+  
+  a {
+    width: 57%;
+    display: block;
+    background-color: $color-orange;
+    border: 0 none;
+    color: $color-white;
+    cursor: pointer;
+    float: left;
+    font-size: 10px;
+    margin-right: 2px;
+    margin-top: 5px;
+    box-sizing: border-box;
+    padding: 10px 25px;
+    font-size: 1em;
+    line-height: 1.5;
+    text-align: center;
+    text-decoration: none;
+    
+    &:hover {
+      background: none;
+      background-color: $color-purple;
+    }
+  }
+  
+  .register-button-wrap {
+    width: 100%;
+  }
+  
+  .greeting{
+  	font-family: 'Press Start 2P',cursive;
+  	color: #e87e2d;
+  	font-size: 14px;
+  }
+  .sincerely{
+  	float: right;
+  	font-family: 'Press Start 2P',cursive;
+  	color: #671e3b;
+  	font-size: 12px;
+  }
 	
-}
-#introduction p{
-	font-size: 14px;
-	line-height: 18px;
-	font-weight: 500;
-	color: $color-black;
-}
-#introduction a{
-	color: #e87e2d;
-	font-size: 14px;
-	font-weight: 500;
-	line-height: 18px;
-	text-decoration: none;
-	cursor: pointer;
-}
-#introduction a:hover{
-	color: #671e3b
-}
-.greeting{
-	font-family: 'Press Start 2P',cursive;
-	color: #e87e2d;
-	font-size: 14px;
-}
-.sincerely{
-	float: right;
-	font-family: 'Press Start 2P',cursive;
-	color: #671e3b;
-	font-size: 12px;
-}
+} // #introduction
+
+
 .wpcf7-submit{
     background-color: $color-orange;
     border: 0 none;
