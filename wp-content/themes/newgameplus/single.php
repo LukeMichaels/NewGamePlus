@@ -8,6 +8,8 @@
  */
 ?>
 <?php get_header();?>
+
+<script type="text/javascript" src="<?php bloginfo( 'template_url' ) ?>/js/libs/jquery.column.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
@@ -19,9 +21,18 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
 		})();
 		
+		/* :::::::::: Multi-Column Layout for N00b Browsers that don't support CSS3 Columns :::::::::: */
+		$('.article-body').column({   
+			width:      'auto',    
+			count:      2,         // Spread over 2 columns.
+			gap:        20,        // Space columns 20 pixels apart.
+			split:      'sentence' // Keeps sentences together.
+		});
+		
 	});
 	
 </script>
+
 
 <div id="blog-section-wrapper">
 	
@@ -36,11 +47,11 @@
 				
 				<!-- :::::::::: image :::::::::: -->
 				<span class="blog-page-image">
-						<?php 
-							if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
-								the_post_thumbnail();
-							} 
-						?>
+					<?php 
+						if ( has_post_thumbnail() ) { // check if the post has a Post Thumbnail assigned to it.
+							the_post_thumbnail();
+						} 
+					?>
 				</span><!--blog-page-image-->
 				
 				<div id="article-info-block">
@@ -338,6 +349,48 @@
 						<?php if(!get_adjacent_post(false, '', false)) { echo '<span class="footer-nav-current">Next Article &raquo;</span>'; } // if there are no newer articles ?>
 					</div><!--next-button-->
 				</div><!--next-prev-buttons-->
+				
+				<!-- :::::::::: about the author :::::::::: -->
+				<div id="article-about-the-author">
+					
+					<!-- :::::::::: heading -->
+					<div id="about-the-author-heading">
+						About The Author
+					</div><!--about-the-author-heading-->
+					
+					<div id="about-the-author-av-info-wrapper">
+						<!-- :::::::::: avatar -->
+						<div id="about-the-author-avatar">
+							<a href="<?php bp_user_link(); ?>">
+								 <?php echo get_avatar( get_the_author_email(), '50' ); ?>
+							</a>
+						</div><!--about-the-author-avatar -->
+						
+						<div id="about-the-author-info">
+							<!-- :::::::::: name -->
+							<span class="about-the-author-name">
+								<?php the_author_meta('display_name'); ?>	
+							</span><!--about-the-author-name-->
+							
+							<!-- :::::::::: twitter -->
+							<span class="user-nickname">
+								Twitter: <a href="http://www.twitter.com/<?php the_author_meta('twitter'); ?>">@<?php the_author_meta('twitter'); ?></a>
+							</span><!--user-nickname-->
+							
+							<!-- :::::::::: google authorship -->
+							<span class="about-the-author-google">
+								Google: <a href="<?php the_author_meta('user_url'); ?>" rel="author" target="_blank"><?php the_author_meta('display_name'); ?></a>
+							</span><!--about-the-author-google-->
+						
+						</div><!--about-the-author-info-->
+					</div><!--about-the-author-av-info-wrapper-->
+					
+					<!-- :::::::::: description -->
+					<div id="about-the-author-description">
+						<?php the_author_meta('description'); ?>
+					</div><!--about-the-author-description-->
+					
+				</div><!--article-about-the-author-->
 			
 				<div id="article-footer-content-placeholder">
 					
