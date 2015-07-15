@@ -1241,20 +1241,14 @@ li.gallery-pagination{
 	line-height: 18px;
 }
 #respond a {
-	float: right;
-	box-sizing: border-box;
-	margin-top: -2px;
-	margin-right: 5px;
-	padding: 14px 15px;
-	font-size: 0.6rem;
+	font-size: 14px;
 	cursor: pointer;
-	color: $color-white;
-	background-color: $color-orange;
+	color: $color-orange;
 	border: 0px;
+	text-decoration: none;
 	
 	&:hover {
-  	background: none;
-  	background-color: $color-purple;
+  	color: $color-purple;
 	}
 }
 
