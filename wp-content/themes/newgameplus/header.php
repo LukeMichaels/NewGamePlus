@@ -162,6 +162,7 @@
 		 		gameQuotes[63] = "Endure and survive.";
 		 		gameQuotes[64] = "It's time to kick ass and chew bubble gum... and I'm all outta gum.";
 		 		gameQuotes[65] = "Hey! Listen!";
+		 		gameQuotes[66] = "And remember that bad times... are just times that are bad";
 	
 		 	var myRandom = Math.floor(Math.random() * gameQuotes.length);
 	
