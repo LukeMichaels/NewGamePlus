@@ -336,6 +336,10 @@ div.item-list-tabs {
 /*--------------------------------------------------------------
 1 - Activity
 --------------------------------------------------------------*/
+.home-single-activity .activity-inner img {
+  display: none;
+}
+
 #activity-stream {
 	margin-top: -5px;
 }
