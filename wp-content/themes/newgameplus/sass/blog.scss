@@ -154,6 +154,7 @@
 	padding: 3px 5px;
 	margin: 2px;
 	color: $color-orange;
+	font-size: 0.9rem;
 }
 .wp-pagenavi a:hover, .wp-pagenavi span.current {
 	border-color: #b8442f;
@@ -750,6 +751,12 @@ li.gallery-pagination{
 	font-size: 14px;
 	line-height: 18px;
 	font-weight: 500;
+}
+.article-body em {
+  font-style: italic;
+}
+.article-body i {
+  font-style: italic;
 }
 .article-body img {
   width: 100%;
