@@ -16,8 +16,9 @@
 
 /* :::::::::::::::::::::::::::::::::::::::::: */
 /* :::::::::: blog list ::::::::::::::::::::: */
-#blog-list-column{
-  width: 620px;
+#blog-list-column {
+  width: 100%;
+  max-width: 620px;
 	padding: 20px;
 	position: relative;
 	float: left;
@@ -1686,4 +1687,20 @@ li.gallery-pagination{
   float: left;
   box-sizing: border-box;
   padding: 20px;
+}
+
+
+/* :::::::::::::::::::::::::::::::::::::::::::::::::::::: */
+/* :::::::::: video page :::::::::::::::::::::::::::::::: */
+.blog-video-content {
+  width: 100%;
+  margin: 20px auto;
+  
+  p {
+    width: 100%;
+    margin: 0 auto 20px;
+    text-align: center;
+    font-size: 1rem;
+    
+  }
 }

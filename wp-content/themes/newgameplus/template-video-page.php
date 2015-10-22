@@ -9,33 +9,13 @@
 ?>
 <?php get_header();?>
 
-<!-- :::::::::: Gallery :::::::::: -->
-<link rel="stylesheet" href="<?php bloginfo( 'template_url' ) ?>/css/prettyGallery.css" />
-<script type="text/javascript" src="<?php bloginfo( 'template_url' ) ?>/js/libs/jquery.prettyGallery.js"></script>
-<script type="text/javascript">
-
-$(document).ready(function(){	
-    $("#gallery-1").prettyGallery({
-		itemsPerPage : 10,
-		animationSpeed : 'slow', /* fast/normal/slow */
-		navigation : 'bottom',  /* top/bottom/both */
-		of_label: ' of ', /* The content in the page "1 of 2" */
-		previous_title_label: 'Previous page', /* The title of the previous link */
-		next_title_label: 'Next page', /* The title of the next link */
-		previous_label: '<<', /* The content of the previous link */
-		next_label: '>>' /* The content of the next link */
-	});
-});
-</script>
-
-
 <div id="blog-section-wrapper">
 	
 	<!-- :::::::::: display a post :::::::::: -->
-	<div id="blog-gallery-page-wrapper">
+	<div class="blog-video-page-wrapper">
 	
 		<!-- :::::::::: gallery content :::::::::: -->
-		<div id="blog-gallery-content">
+		<div class="blog-video-content">
 			<?php the_content()?>
 		</div><!--blog-gallery-content-->
 		

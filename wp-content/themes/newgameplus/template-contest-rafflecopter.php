@@ -9,7 +9,6 @@
 ?>
 <?php get_header();?>
 
-<script type="text/javascript" src="<?php bloginfo( 'template_url' ) ?>/js/libs/jquery.column.js"></script>
 <script type="text/javascript">
 
 	$(document).ready(function(){
@@ -213,26 +212,56 @@
           <img src="http://newgameplus.co/wp-content/uploads/2015/07/amiibo-giveaway-shot.jpg" alt="" title="amiibo-giveaway-shot" width="460" height="365" class="alignnone size-full wp-image-3475" />
         </p>
         
-        <p>The giveaway will begin July 11, 2015 at 12:00 AM Pacific time and runs through July 31, 2015 at 12:00 AM Pacific time. If you want to check out all of the fun legal information you can do so on our <a href="http://newgameplus.co/terms-of-use/#giveaway-info" alt="read the legal details">terms and conditions page</a>.
+        <p>The giveaway will begin July 10, 2015 at 9:00 PM Pacific time and runs through July 31, 2015 at 9:00 PM Pacific time. If you want to check out all of the fun legal information you can do so on our <a href="http://newgameplus.co/terms-of-use/#giveaway-info" alt="read the legal details">terms and conditions page</a>.
+        </p>
+        
+        <p>
+          Please note that this giveaway is open to US residents only. I will be looking into ways to include people outside of the US in future giveaways.
         </p>
         
   		</div><!-- .contest-left-column -->
         
-      <div class="contest-right-column">
+      <div class="contest-right-column">        
         <p>
-          Now for the information you&#8217;re looking for, <b>how to enter</b>.
+          To enter simply:
+        </p>
+          
+        <ul>
+          <li><a href="http://www.newgameplus.co/register" alt="register for a NewGame+ account" target="_blank">Register for a NewGame+ account by clicking here</a>.
+          </li>
+          <li>Once registered you will be able to comment on this post. Use your newly granted commenting power to let us know which amiibo you want (only list one).
+          </li>
+          <li>Once you've commented, sign up via rafflecopter(below) via Email (ignore the facebook login) place your NewGame+ username into the name field and your email address in the email field.
+          </li>
+          <li>Lastly, in rafflecopter click that you left a comment and you're good-to-go.
+          </li>
+        </ul>
+          
+        <p> 
+          Once you've entered you can gain additional entries by following us on Twitter and/or tweeting about the giveaway (you can do this once a day). 
         </p>
         
         <p>
-          Simply <a href="http://www.newgameplus.co/register" alt="register for a NewGame+ account" target="_blank">register for a NewGame+ account by clicking here</a>. Pardon our dust, this is a beta. Profiles and community features are still very limited and we&#8217;re working the kinks out. Once registered you will be able to comment on this post. Use your newly granted commenting power to let us know which amiibo you want (only list one). From there you can gain additional entries by using the rafflecopter plugin to follow us on Twitter, plus you can gain additional entries by tweeting about the giveaway (you can do this once a day). That&#8217;s it, we will determine a winner using rafflecopter within 48 hours of the contest ending.
+          To gain bonus entries you must tweet the following:
+        </p>
+        <p>
+          <b>Enter to win an #amiibo at http://newgameplus.co/?p=3470 #giveaway</b>
+        </p>
+          
+        <p>
+          We will determine a winner using rafflecopter within 48 hours of the contest ending.
         </p>
         
         <p>
-          <a class="rcptr" href="http://www.rafflecopter.com/rafl/display/5cdaef8d1/" rel="nofollow" data-raflid="5cdaef8d1" data-theme="classic" data-template="" id="rcwidget_3irtni14">a Rafflecopter giveaway</a>
+          <a class="rcptr" href="http://www.rafflecopter.com/rafl/display/5cdaef8d1/" rel="nofollow" data-raflid="5cdaef8d1" data-theme="classic" data-template="" id="rcwidget_o6whvob7">a Rafflecopter giveaway</a>
         </p>
-        
+                
         <p>
           After a winner is determined we will get in touch with them (or you!) via this site, then we will ship the amiibo (well packed for those that like to keep their figures in the box) via USPS.
+        </p>
+        
+        <p>
+          Those that enter, welcome to NewGame+, please pardon our dust as we improve the site. We're currently in beta, and we still have a lot of work to do before we're ready to officially launch.
         </p>
         
         <p>
